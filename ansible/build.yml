@@ -1,6 +1,6 @@
 ---
 - name: copy to awx
-  host: 192.168.81.141
+  hosts: 192.168.81.141
   become: true
   tasks:
     - name: festch file
