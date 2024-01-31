@@ -4,8 +4,8 @@ pipeline {
     stage('Checkout') {
       steps {
         script {
-           git branch: 'ahmedtyb', 
-           url: 'https://github.com/tbswahmed/LCProject.git'
+           git branch: 'syrinetyb', 
+           url: 'https://github.com/syrinehosni/LCProject.git'
           }
        }
     }
