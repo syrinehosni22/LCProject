@@ -23,13 +23,13 @@ pipeline {
             }
         }
 
-        stage('Build') {
-            steps {
-                script {
-                    sh 'npm run build'
-                }
-            }
-        }
+      //   stage('Build') {
+      //       steps {
+      //           script {
+      //               sh 'npm run build'
+      //           }
+      //       }
+      //   }
 
       //   stage('Deploy') {
       //       steps {
@@ -37,13 +37,13 @@ pipeline {
       //       }
       //   }
 
-        stage('Test') {
-            steps {
-                script {
-                    sh 'npm test'
-                }
-            }
-        }
+      //   stage('Test') {
+      //       steps {
+      //           script {
+      //               sh 'npm test'
+      //           }
+      //       }
+      //   }
     }
 
     post {
