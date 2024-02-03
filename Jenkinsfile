@@ -32,7 +32,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh 'npm run build'
+                    bat 'npm run build'
                 }
             }
         }
@@ -46,7 +46,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh 'npm test'
+                    bat 'npm test'
                 }
             }
         }
