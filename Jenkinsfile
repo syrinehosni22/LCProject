@@ -2,14 +2,14 @@ pipeline {
     agent any
      environment {
         NODEJS_HOME = tool 'NodeJS'
+        PATH = "%NODEJS_HOME%//bin;%PATH%"
         NPM_REGISTRY = 'https://registry.npmjs.org/'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                echo %PATH%
-
+                checkout scm
             }
         }
 
@@ -18,6 +18,7 @@ pipeline {
             steps {
                dir('C:/Users/User/LCProject') {
                  script {
+                  echo %PATH%
                      bat 'npm install --registry %NPM_REGISTRY%'
 
                 }
