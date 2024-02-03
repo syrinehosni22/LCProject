@@ -14,7 +14,7 @@ pipeline {
             steps {
                dir('C:/Users/User/LCProject/') {
                  script {
-                    sh 'npm install --registry $NPM_REGISTRY'
+                    sh 'npm install '
                 }
                }
               
