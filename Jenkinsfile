@@ -18,7 +18,6 @@ pipeline {
             steps {
                dir('C:/Users/User/LCProject') {
                  script {
-                  echo %PATH%
                      bat 'npm install --registry %NPM_REGISTRY%'
 
                 }
