@@ -14,7 +14,7 @@ pipeline {
             steps {
                dir('C:/Users/User/LCProject') {
                  script {
-                     bat 'start npm start'
+                     bat 'start npm install'
 
                 }
                }
