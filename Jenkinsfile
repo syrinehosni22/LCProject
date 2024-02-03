@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-         stage('install dependency') {
+         stage('install spetial dependency') {
             steps {
                dir('C:/Users/User/LCProject') {
                  script {
