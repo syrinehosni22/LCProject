@@ -19,7 +19,7 @@ pipeline {
             steps {
                dir('C:/Users/User/LCProject') {
                  script {
-                     bat 'npm install  @angular-devkit/build-angular:browser --legacy-peer-deps'
+                     bat 'npm install  @angular-devkit/build-angular'
                 }
                }
               
