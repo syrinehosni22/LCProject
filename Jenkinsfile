@@ -18,7 +18,7 @@ pipeline {
             steps {
                dir('C:/Users/User/LCProject') {
                  script {
-                     bat 'echo Hello World'
+                     sh 'echo Hello World'
 
                 }
                }
