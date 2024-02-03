@@ -13,31 +13,31 @@ pipeline {
             }
         }
               
-     }
 
       
 
         stage('Build') {
             steps {
                 script {
-                    bat 'npm run build'
+                    sh 'npm run build'
                 }
             }
         }
 
-        // stage('Deploy') {
-        //     steps {
-        //         // Add your deployment steps here (e.g., copy files to a server)
-        //     }
-        // }
+        stage('Deploy') {
+            steps {
+                // Add your deployment steps here (e.g., copy files to a server)
+            }
+        }
 
         stage('Test') {
             steps {
                 script {
-                    bat 'npm test'
+                    sh 'npm test'
                 }
             }
         }
+    }
 
     post {
         success {
@@ -49,5 +49,7 @@ pipeline {
             // Add notification steps or rollback actions on failure
         }
     }
+
+  }
 }
 // test 2
