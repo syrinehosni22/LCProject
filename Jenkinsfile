@@ -1,12 +1,6 @@
 pipeline {
     agent any
 
-    environment {
-        // Set your environment variables here
-        NODEJS_HOME = tool 'NodeJS' // Assuming you have NodeJS tool configured in Jenkins
-        PATH = "${NODEJS_HOME}/bin:${PATH}"
-        NPM_REGISTRY = 'https://registry.npmjs.org/' // Replace with your npm registry
-    }
 
     stages {
         stage('Checkout') {
@@ -18,7 +12,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 script {
-                    sh 'npm install --registry $NPM_REGISTRY'
+                    sh 'npm install '
                 }
             }
         }
