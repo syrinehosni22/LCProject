@@ -12,43 +12,32 @@ pipeline {
                 checkout scm
             }
         }
-
-
-         stage('test') {
-            steps {
-               dir('C:/Users/User/LCProject') {
-                 script {
-                     bat 'echo Hello World'
-
-                }
-               }
               
+     }
+
+      
+
+        stage('Build') {
+            steps {
+                script {
+                    bat 'npm run build'
+                }
             }
         }
 
-      // 
+        // stage('Deploy') {
+        //     steps {
+        //         // Add your deployment steps here (e.g., copy files to a server)
+        //     }
+        // }
 
-      //   stage('Build') {
-      //       steps {
-      //           script {
-      //               sh 'npm run build'
-      //           }
-      //       }
-      //   }
-
-      //   stage('Deploy') {
-      //       steps {
-      //           // Add your deployment steps here (e.g., copy files to a server)
-      //       }
-      //   }
-
-      //   stage('Test') {
-      //       steps {
-      //           script {
-      //               sh 'npm test'
-      //           }
-      //       }
-      //   }
+        stage('Test') {
+            steps {
+                script {
+                    bat 'npm test'
+                }
+            }
+        }
     }
 
     post {
