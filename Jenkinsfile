@@ -2,7 +2,7 @@ pipeline {
     agent any
      environment {
         NODEJS_HOME = tool 'NodeJS'
-        PATH = "%NODEJS_HOME%//bin;%PATH%"
+        PATH = "C:\\WINDOWS\\SYSTEM32"
         NPM_REGISTRY = 'https://registry.npmjs.org/'
     }
 
