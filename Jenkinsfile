@@ -5,6 +5,8 @@ pipeline {
         PATH = "C:\\WINDOWS\\SYSTEM32"
         NPM_REGISTRY = 'https://registry.npmjs.org/'
     }
+      tools {nodejs "NodeJS"}
+
 
     stages {
         stage('Checkout') {
