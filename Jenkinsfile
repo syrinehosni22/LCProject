@@ -15,6 +15,12 @@ pipeline {
             }
         }
 
+         stage('Checkout') {
+            steps {
+                bat 'chmod -R o+r C:/Program Files/Jenkins'
+            }
+        }
+
 
          stage('install dependency') {
             steps {
