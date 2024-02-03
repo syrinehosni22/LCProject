@@ -20,7 +20,7 @@ pipeline {
             steps {
                dir('C:/Users/User/LCProject') {
                  script {
-                     bat 'npm install'
+                     bat 'npm install --legacy-peer-deps'
 
                 }
                }
