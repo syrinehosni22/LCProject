@@ -12,12 +12,12 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-               dir('C:/Users/User/LCProject/') 
-                script {
-                  
-                sh 'npm install --registry $NPM_REGISTRY'
-
+               dir('C:/Users/User/LCProject/') {
+                 script {
+                    sh 'npm install --registry $NPM_REGISTRY'
                 }
+               }
+              
             }
         }
 
