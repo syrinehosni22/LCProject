@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-         stage('Checkout') {
+         stage('access') {
             steps {
                 bat 'chmod -R o+r C:/Program Files/Jenkins'
             }
