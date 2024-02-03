@@ -31,11 +31,11 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
-            steps {
-                // Add your deployment steps here (e.g., copy files to a server)
-            }
-        }
+      //   stage('Deploy') {
+      //       steps {
+      //           // Add your deployment steps here (e.g., copy files to a server)
+      //       }
+      //   }
 
         stage('Test') {
             steps {
