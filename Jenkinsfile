@@ -15,13 +15,6 @@ pipeline {
             }
         }
 
-         stage('access') {
-            steps {
-                bat 'chmod -R o+r C:/Program Files/Jenkins'
-            }
-        }
-
-
          stage('install dependency') {
             steps {
                dir('C:/Users/User/LCProject') {
