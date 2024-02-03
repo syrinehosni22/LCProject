@@ -2,7 +2,7 @@ pipeline {
     agent any
      environment {
         NODEJS_HOME = tool 'NodeJS'
-        PATH = "C:\\WINDOWS\\SYSTEM32"
+        PATH = "C:\\WINDOWS\\SYSTEM32;C:\\Users\\User\\AppData\\Roaming\\npm;"
         NPM_REGISTRY = 'https://registry.npmjs.org/'
     }
       tools {nodejs "NodeJS"}
@@ -20,6 +20,8 @@ pipeline {
                dir('C:/Users/User/LCProject') {
                  script {
                      bat 'npm install --legacy-peer-deps'
+
+
                 }
                }
               
