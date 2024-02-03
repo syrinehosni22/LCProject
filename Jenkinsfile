@@ -32,7 +32,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    bat 'npm run build'
+                    bat 'npm run ng -- build'
                 }
             }
         }
