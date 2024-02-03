@@ -74,3 +74,4 @@ export class StockComponent implements OnInit {
     this.form = false;
   }
 }
+// test
