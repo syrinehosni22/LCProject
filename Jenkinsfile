@@ -4,6 +4,7 @@ pipeline {
         NODEJS_HOME = tool 'NodeJS'
         PATH = "C:\\WINDOWS\\SYSTEM32"
         NPM_REGISTRY = 'https://registry.npmjs.org/'
+         PATH=" C:\Users\User\AppData\Roaming\npm" 
     }
       tools {nodejs "NodeJS"}
 
