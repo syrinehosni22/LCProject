@@ -14,17 +14,19 @@ pipeline {
         }
 
 
-        stage('Install Dependencies') {
+         stage('test') {
             steps {
                dir('C:/Users/User/LCProject') {
                  script {
-                     bat 'npm install --registry %NPM_REGISTRY%'
+                     bat 'echo Hello World'
 
                 }
                }
               
             }
         }
+
+      // 
 
       //   stage('Build') {
       //       steps {
