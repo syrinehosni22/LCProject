@@ -55,10 +55,12 @@ pipeline {
 
         stage('Test') {
             steps {
+                dir('C:/Users/User/LCProject') {
                 script {
                     bat 'npm test'
                 }
             }
+        }
         }
     }
 
