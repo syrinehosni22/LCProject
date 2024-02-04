@@ -36,23 +36,23 @@
     <form>
       <div class="mb-3">
         <label for="mp">Montant Paye</label>
-        <div class="input-group">
+        <!-- <div class="input-group">
           <input id="mp" class="form-control" type="number" placeholder="Montant Paye"
                  [(ngModel)]="reglement.montantPaye"
-                 [ngModelOptions]="{standalone : true}"></div>
+                 [ngModelOptions]="{standalone : true}"></div> -->
       </div>
       <div class="mb-3">
         <label for="mr">Montant Restant</label>
-        <div class="input-group">
+        <!-- <div class="input-group">
           <input id="mr" class="form-control" type="number" placeholder="Montant Restant"
                  [(ngModel)]="reglement.montantRestant"
-                 [ngModelOptions]="{standalone : true}"></div>
+                 [ngModelOptions]="{standalone : true}"></div> -->
       </div>
       <div class="mb-3">
         <label for="payee">Payee</label>
         <div class="input-group">
           <div class="input-group">
-            <select id="payee" class="form-select" aria-label="Default select example" [(ngModel)]="reglement.payee"
+            <select id="payee" class="form-select" aria-label="Default select example"
                     name="hi">
               <option value="True">Oui</option>
               <option value="False">Non</option>
@@ -61,10 +61,10 @@
         </div>
         <div class="mb-3">
           <label for="mdate">Date Reglement</label>
-          <div class="input-group">
+          <!-- <div class="input-group">
             <input id="mdate" class="form-control" type="date" placeholder="Date Reglement"
                    [(ngModel)]="reglement.dateReglement"
-                   [ngModelOptions]="{standalone : true}"></div>
+                   [ngModelOptions]="{standalone : true}"></div> -->
         </div>
       </div>
     </form>
