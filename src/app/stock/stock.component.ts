@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {Stock} from '../shared/Model/Stock';
 import {StockService} from '../shared/Service/Stock.service';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-stock',

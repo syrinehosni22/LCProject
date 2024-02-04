@@ -34,14 +34,36 @@ pipeline {
                 script {
                     bat 'npm run build'
                 }
+<<<<<<< HEAD
+=======
                 }
              }
         }
+
+        // stage('Deploy') {
+        //     steps {
+        //         // Add your deployment steps here (e.g., copy files to a server)
+        //     }
+        // }
+
+        stage('Test') {
+            steps {
+                dir('C:/Users/User/LCProject') {
+                script {
+                    bat 'npm test'
+>>>>>>> 0703ee71c8619383ea36a5708dc0bda31384e662
+                }
+             }
+        }
+<<<<<<< HEAD
         stage('Deploy') {
             steps {
                  echo 'deploy to server'
             }
         }       
+=======
+        }
+>>>>>>> 0703ee71c8619383ea36a5708dc0bda31384e662
     }
 
     post {
