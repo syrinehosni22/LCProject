@@ -39,10 +39,12 @@ pipeline {
 
         stage('Build') {
             steps {
+                dir('C:/Users/User/LCProject') {
                 script {
                     bat 'npm run build'
                 }
-            }
+                }
+             }
         }
 
         // stage('Deploy') {
