@@ -9,23 +9,6 @@ pipeline {
 
 
     stages {
-        stage('Checkout') {
-            steps {
-                checkout scm
-            }
-        }
-
-        //  stage('install spetial dependency') {
-        //     steps {
-        //        dir('C:/Users/User/LCProject') {
-        //          script {
-        //              bat 'npm install  @angular-devkit/build-angular --legacy-peer-deps'
-        //         }
-        //        }
-              
-        //     }
-        // }
-
        stage('install dependency') {
             steps {
                dir('C:/Users/User/LCProject') {
@@ -36,28 +19,29 @@ pipeline {
               
             }
         }
-
+         stage('Test') {
+            steps {
+                dir('C:/Users/User/LCProject') {
+                script {
+                    echo 'Hello, this is a test!'
+                }
+            }
+        }
+        }
         stage('Build') {
             steps {
+                dir('C:/Users/User/LCProject') {
                 script {
                     bat 'npm run build'
                 }
-            }
-        }
-
-        // stage('Deploy') {
-        //     steps {
-        //         // Add your deployment steps here (e.g., copy files to a server)
-        //     }
-        // }
-
-        stage('Test') {
-            steps {
-                script {
-                    bat 'npm test'
                 }
-            }
+             }
         }
+        stage('Deploy') {
+            steps {
+                 echo 'deploy to server'
+            }
+        }       
     }
 
     post {
