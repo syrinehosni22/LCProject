@@ -15,16 +15,16 @@ pipeline {
             }
         }
 
-         stage('install spetial dependency') {
-            steps {
-               dir('C:/Users/User/LCProject') {
-                 script {
-                     bat 'npm install  @angular-devkit/build-angular --legacy-peer-deps'
-                }
-               }
+        //  stage('install spetial dependency') {
+        //     steps {
+        //        dir('C:/Users/User/LCProject') {
+        //          script {
+        //              bat 'npm install  @angular-devkit/build-angular --legacy-peer-deps'
+        //         }
+        //        }
               
-            }
-        }
+        //     }
+        // }
 
        stage('install dependency') {
             steps {
