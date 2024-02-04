@@ -38,21 +38,13 @@ pipeline {
              }
         }
 
-        // stage('Deploy') {
-        //     steps {
-        //         // Add your deployment steps here (e.g., copy files to a server)
-        //     }
-        // }
-
-        stage('Test') {
+        stage('Deploy') {
             steps {
-                dir('C:/Users/User/LCProject') {
-                script {
-                    bat 'npm test'
-                }
-             }
+                  echo 'Hello, this is a test!'
+                }            }
         }
-        }
+
+        
     }
 
     post {
