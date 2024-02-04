@@ -34,8 +34,6 @@ pipeline {
                 script {
                     bat 'npm run build'
                 }
-<<<<<<< HEAD
-=======
                 }
              }
         }
@@ -51,19 +49,10 @@ pipeline {
                 dir('C:/Users/User/LCProject') {
                 script {
                     bat 'npm test'
->>>>>>> 0703ee71c8619383ea36a5708dc0bda31384e662
                 }
              }
         }
-<<<<<<< HEAD
-        stage('Deploy') {
-            steps {
-                 echo 'deploy to server'
-            }
-        }       
-=======
         }
->>>>>>> 0703ee71c8619383ea36a5708dc0bda31384e662
     }
 
     post {
@@ -77,4 +66,4 @@ pipeline {
         }
     }
 }
-// test 2
+// test 3
