@@ -41,8 +41,9 @@ pipeline {
         stage('Deploy') {
             steps {
                   echo 'Hello, this is a test!'
-                }            }
+                }
         }
+        
 
         
     }
